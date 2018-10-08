@@ -1,7 +1,7 @@
 body {
 
 	background-color: #3c8ce4;
-	color: white;
+	color: #fff;
 	font: bold 36px Helvetica, Arial, Sans-Serif;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 	             0px 8px 13px rgba(0,0,0,0.1),
@@ -14,25 +14,29 @@ body {
 	border-radius: 0;
 }
 
+a {
+    color: #fff !important;
+}
+
 a:link {
 	text-decoration: none;
 }
 
 a {
-	color: white;
+	color: #fff;
 }
 
 a:hover {
-	color: #ccc;
-	text-decoration: underline;
+	opacity: .7;
+	text-decoration: none;
 }
 
 a:visited {
-	color: white;
+	color: #fff;
 }
 
 a:first-child {
-	padding-right: 8%;
+	margin-right: 8%;
 }
 
 blockquote:first-child {

@@ -10,9 +10,8 @@ $(document).ready(function() {
 	    url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',  
 	    success: function(data) {
 
-	    	var frase = JSON.parse(data);
-	    	var quote = frase.quote;
-	    	var author = frase.author
+	    	var quote = data[0].quote;
+	    	var author = data[0].author
 	    	$("#total-quote").addClass('animated fadeInDown');
 	    	$("#quote").text("\""+quote+"\"");
 	    	$("#author").text("- "+author);
@@ -34,9 +33,8 @@ $(document).ready(function() {
 		    url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',  
 		    success: function(data) {
 
-		    	var frase = JSON.parse(data);
-		    	var quote = frase.quote;
-		    	var author = frase.author
+		    	var quote = data[0].quote;
+		    	var author = data[0].author
 
 		    	$("#total-quote").addClass('animated fadeInDown');
 		    	$("#quote").text("\""+quote+"\"");
